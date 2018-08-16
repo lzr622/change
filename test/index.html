@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./index1.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="file.php" method="POST">
+        文件名:
+        <input type='file' name='textfield' id='textfield' />  
+        <input type="text" value="" name="fn" onblur="tip()">
+        <br>
+        <ul id="ul">
+            <li>原文:
+                <input class="before" type="text" name="before[]" value="" placeholder="要替换的内容">
+            </li>
+            <li>替换:
+                <input type="text" name="after[]" value="" placeholder="替换后的内容">
+            </li>
+        </ul><br>
+        <br> 添加更改内容请点:
+        
+            <div class="add" onclick="addul()">+</div>
+
+        <br>
+        <input class="tijiao" type="submit" value="提交" id="send">
+    </form>
+
+    <script src="./jquery-1.11.3.min.js"></script>
+    <script>
+        function addul() {
+            var ul = document.getElementById("ul");
+            var li = document.createElement("li");
+            var li2 = document.createElement("li");
+            li.innerHTML = '原文: <input class="before" type="text" name="before[]" value="" placeholder="要替换的内容">';
+            ul.appendChild(li);
+            li2.innerHTML = '替换: <input class="after" type="text" name="after[]" value="" placeholder="替换后的内容">';
+            ul.appendChild(li2);
+        }
+
+
+        // $(function(){
+        //     // var ul = "<ul id='ul'><li>原文:<input type='text' name='before[]' value=' placeholder='要替换的内容'></li><li>替换:<input type='text' name='after[]' value=' placeholder='替换后的内容'></li></ul>";
+        //     $(".add").click(function () {
+        //         $("<p class='three'>我是同级元素insertBefore</p>").insertAfter($("#ul"));
+        //     })
+        // });
+    </script>
+    <script>
+        var xmlHttp;
+        function S_xmlhttprequest(){
+        if(window.ActiveXobject){
+            xmlHttp = new ActiveXObject('Microsoft.XMLHTTP');
+        }else if(window.XMLHttpRequest){
+            xmlHttp = new XMLHttpRequest();
+        }
+        }
+        function tip(){
+        var fn = $("input[name='fn']").val();
+        // var fn = 2;
+        // alert(f);//获取文本框内容
+        if(fn!=""){
+        S_xmlhttprequest();
+        xmlHttp.open("POST","set.php",true);//找开请求
+        xmlHttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded"); 
+        xmlHttp.onreadystatechange = byphp;//准备就绪执行
+        xmlHttp.send("fn="+fn);//发送
+        }
+        else{
+            alert("请填写文件名");
+        }
+    }
+        function byphp(){
+        //判断状态
+        // if(xmlHttp.readyState==1){//Ajax状态
+        //     document.getElementById('tip').innerHTML = "正在加载";
+        // }
+        if(xmlHttp.readyState==4){//Ajax状态
+            if(xmlHttp.status==200){//服务器端状态
+            var tips = xmlHttp.responseText;
+            if(tips==2){
+                console.log(typeof(tips));
+                console.log(tips);
+                alert("文件不存在");
+                
+            }  
+            if(tips == 3){
+            var set = "txt,html,htm,doc,docx,php,js,css";
+            alert("文件格式应为"+set+"之一");
+            }  
+            else{
+                console.log(tips); 
+            }
+        }
+        }
+        }
+    </script>
+    <!-- <script>
+        $("#send").mouseenter(function(){
+        var data = {};
+        var arr1 = [];
+        var arr2 = [];
+        $("input[name='before[]']").each(function(){
+            arr1.push($(this).val());
+        });
+        $("input[name='after[]']").each(function(){
+            arr2.push($(this).val());
+        })
+        p = $("input[name='fn']").val();
+        b = arr1;
+        a = arr2;
+        console.log(p);
+        console.log(b);
+        console.log(a);
+        $().$.ajax({
+             type: "post",
+             url: "file.php",
+             data: {path:p, before:b, after:a},
+             traditional:true,
+             success: function(msg){
+                         if(msg = 1){
+                             alert("成功");
+                         }
+                      }
+         });
+        });
+        
+    </script> -->
+</body>
+
+</html>

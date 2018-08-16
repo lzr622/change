@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{dede:field.title /} - LIMING(Shanghai)</title>
+    <meta name="keywords" content="{dede:field.keywords /}" />
+    <meta name="description" content="{dede:field.description /}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <link rel="stylesheet" href="./mofen/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./mofen/glyphicons.css">
+    <link rel="stylesheet" type="text/css" href="/css/sr/pintuer.css">
+    <link rel="stylesheet" type="text/css" href="./mofen/inside.css">
+    <link rel="stylesheet" type="text/css" href="./mofen/media.css">
+    <link rel="stylesheet" type="text/css" href="./mofen/head.css">
+    <link rel="stylesheet" type="text/css" href="./mofen/index.css">
+    <link rel="stylesheet" type="text/css" href="./mofen/more.css">
+    <script src="./mofen/jquery-1.11.3.min.js"></script>
+    <script src="./mofen/pintuer.js"></script>
+</head>
+
+<body>
+    <!--顶端导航-->
+    <div class="container top_tit" style=";height: 30px;z-index: 1001;text-align: right;margin:0 auto;font-size: 12px">
+        <span style="display: inline-block;line-height: 30px;">
+            <a style="text-decoration: none" href="mailto:infosh@limingco-group.com">
+                <i style="color:#bababa" class="glyphicon glyphicon-envelope"></i> Email:infosh@limingco-group.com</a>
+        </span>
+        <span style="display: inline-block;line-height: 30px;background: url('./mofen/yy.png') no-repeat right center;padding-right: 40px;padding-left: 30px;">
+            <i style="color:#bababa" class="glyphicon glyphicon-phone-alt"></i> 0086-21-33901608</span>
+        <div style="display:inline-block">
+            <span style="display: inline-block;line-height: 30px;background: url('./mofen/jt.png') no-repeat right center;padding-right: 20px;padding-left: 0;position:relative"
+                id="uuuuu">
+                <a href="http://www.lmzggroup.com" style="">English</a>
+                <ul style="display:none;position: absolute;background-color: white;z-index: 1002;text-align: left;width:150px;left:-15px;"
+                    id="l1">
+                    <li class="change-lang">
+                        <a href="http://fr.lmzggroup.com">French(français)</a>
+                    </li>
+                    <li class="change-lang">
+                        <a href="http://ru.lmzggroup.com">Russian(русский)</a>
+                    </li>
+                    <li class="change-lang">
+                        <a href="http://es.lmzggroup.com">Spanish(español)</a>
+                    </li>
+
+
+
+                </ul>
+            </span>
+        </div>
+    </div>
+    <script>
+        $("#l1").parent("#uuuuu").hover(function () {
+            $(this).find('#l1').slideDown("fast");
+        }, function () {
+            $(this).find('#l1').slideUp("fast");
+        });
+    </script>
+    <!-- <script>
+        $(function () {
+            $(window).scroll(function () {
+                var a = $(window).scrollTop();
+                if (a > 30) {
+                    $("#daoh").css('position', 'fixed');
+                } else {
+                    $("#daoh").css('position', "relative");
+                }
+            })
+        })
+    </script> -->
+    <!-- <script>
+        $(function () {
+            var w = $(window).width();
+            if (w < 768) {
+                $(".top_tit").hide();
+            }
+        });
+    </script>  -->
+    <div id="daoh">
+        <div id="nm">
+            <div class="nav" id="nav">
+                <a href="/">
+                    <img src="./mofen/logo.png" id="logo">
+                </a>
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $("#fun1").click(function () {
+                            $(this).siblings(".lanren").slideToggle(500);
+                        });
+                    })
+                </script>
+                <div id="fun1">
+                    <img src="./mofen/fun1.gif" class="fun" />
+                </div>
+                <div class="lanren">
+                    <ul class="nav1">
+                        <li class="li1" id="mainlevel_00">
+                            <a href="/">
+                                <div>HOME
+                                    <div class="title-line"></div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="li1" id="mainlevel_01">
+                            <a href="/product/">
+                                <div>PRODUCTS
+                                    <div class="title-line"></div>
+                                </div>
+                            </a>
+                            <ul class="nav2">
+                                <li class="li2">
+                                    <a href="/portable_mobile/">Portable & Mobile</a>
+                                    <div class="entry-trangle"></div>
+                                    <ul class="nav3" style="margin-top:-22px;">
+                                        <li class="li3 mk">
+                                            <a href="/portable_mobile/crawler.html" title="Crawler Type Mobile Crushing Pl">Crawler Mobile Crushing Plant</a>
+                                        </li>
+                                        <li class="li3 mk">
+                                            <a href="/portable_mobile/primary.html" title="Mobile Primary Crushing Plant">Mobile Primary Crushing Plant</a>
+                                        </li>
+                                        <li class="li3 mk">
+                                            <a href="/portable_mobile/second.html" title="Mobile Crushing Screening Plant">Mobile Crushing Screening Plant</a>
+                                        </li>
+                                        <li class="li3 mk">
+                                            <a href="/portable_mobile/crush.html" title="K series Mobile Cone Crusher">K series Mobile Cone Crusher</a>
+                                        </li>
+                                        <li class="li3 mk">
+                                            <a href="/portable_mobile/vsi.html" title="Mobile Vertical Shaft Impact Cr">Mobile Vertical Shaft Impact Crusher</a>
+                                        </li>
+                                        <li class="li3 mk">
+                                            <a href="/portable_mobile/tertiary.html" title="Mobile Crushing and Washing Pla">Mobile Crushing and Washing Plant</a>
+                                        </li>
+                                        <li class="li3 mk">
+                                            <a href="/portable_mobile/three.html" title="Three Combination Mobile Crushe">Three Combination Mobile Crusher</a>
+                                        </li>
+                                        <li class="li3 mk">
+                                            <a href="/portable_mobile/four.html" title="Four Combination Mobile Crusher">Four Combination Mobile Crusher</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="li2">
+                                    <a href="/crushing/">Crushing Equipment</a>
+                                    <div class="entry-trangle"></div>
+                                    <ul class="nav3" style="margin-top:-60px;">
+                                        <li class="li3">
+                                            <a href="/crushing/c6x.html" title="C6X Series Jaw Crusher">C6X Jaw Crusher</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/crushing/pew.html" title="European Type Jaw Crusher">European Jaw Crusher</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/crushing/pe.html" title="PE Series Jaw Crusher">PE Series Jaw Crusher</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/crushing/ci5x.html" title="CI5X Series Impact Crusher">CI5X Series Impact Crusher</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/crushing/pfw.html" title="European Type Impact Crusher">European Impact Crusher</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/crushing/pf.html" title="PF Series Impact Crusher">PF Impact Crusher</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/crushing/hpt.html" title="HPT Hydraulic Cone Crusher">HPT Cone Crusher</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/crushing/hst.html" title="HST Single Cylinder Hydraulic C">HST Hydraulic Cone Crusher</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/crushing/spring_cone_crusher.html" title="Spring Cone Crusher">Spring Cone Crusher</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/crushing/cs.html" title="CS Series Cone Crusher">CS Series Cone Crusher</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/crushing/hj.html" title="HJ Series High Efficiency Jaw C">HJ Jaw Crusher</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="li2">
+                                    <a href="/sand/">Sand Making Machine</a>
+                                    <div class="entry-trangle"></div>
+                                    <ul class="nav3" style="margin-top:-98px;">
+                                        <li class="li3">
+                                            <a href="/sand/vsi6x.html" title="VSI6X Vertical Shaft Impact Cru">VSI6X Impact Crusher</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/sand/vsi5x.html" title="VSI5X Vertical Shaft Impact Cru">VSI5X Impact Crusher</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/sand/vsi.html" title="VSI Sand Making Machine">VSI Sand Making Machine</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/sand/pcl.html" title="PCL Sand Making Machine">PCL Sand Making Machine</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="li2">
+                                    <a href="/grinding/">Grinding Equipment</a>
+                                    <div class="entry-trangle"></div>
+                                    <ul class="nav3" style="margin-top:-136px;">
+                                        <li class="li3 mk">
+                                            <a href="/grinding/mb5x.html" title="MB5X Pendulous Suspension Grind">MB5X Pendulous Suspension Grindin</a>
+                                        </li>
+                                        <li class="li3 mk">
+                                            <a href="/grinding/mtw.html" title="MTW European Trapezium Mill">MTW Trapezium Mill</a>
+                                        </li>
+                                        <li class="li3 mk">
+                                            <a href="/grinding/lm.html" title="LM Series Vertical Mill">LM Vertical Mill</a>
+                                        </li>
+                                        <li class="li3 mk">
+                                            <a href="/grinding/tgm.html" title="TGM Super Pressure Trapezium Mi">TGM Super Pressure Trapezium Mill</a>
+                                        </li>
+                                        <li class="li3 mk">
+                                            <a href="/grinding/raymond.html" title="Raymond Mill">Raymond Mill</a>
+                                        </li>
+                                        <li class="li3 mk">
+                                            <a href="/grinding/hgm.html" title="MW Series Micro Powder Mill">MW Series Micro Powder Mill</a>
+                                        </li>
+                                        <li class="li3 mk">
+                                            <a href="/grinding/ygm.html" title="YGM Series Suspension Mill">YGM Suspension Mill</a>
+                                        </li>
+                                        <li class="li3 mk">
+                                            <a href="/grinding/lum.html" title="LUM Series Superfine Vertical R">LUM Vertical Roller Mill</a>
+                                        </li>
+                                        <li class="li3 mk">
+                                            <a href="/grinding/t130x.html" title="T130X Superfine Grinding Mill">T130X Superfine Grinding Mill</a>
+                                        </li>
+                                        <li class="li3 mk">
+                                            <a href="/grinding/msb.html" title="MSB Series Coarse Powder Mill">MSB Coarse Powder Mill</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="li2">
+                                    <a href="/beneficiation/">Beneficiation Equipment</a>
+                                    <div class="entry-trangle"></div>
+                                    <ul class="nav3" style="margin-top:-174px;">
+                                        <li class="li3">
+                                            <a href="/beneficiation/ceramic.html" title="Ceramic filter">Ceramic filter</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/beneficiation/cyclone.html" title="Cyclone">Cyclone</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/beneficiation/classifier.html" title="Spiral chute">Spiral chute</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/beneficiation/flotation.html" title="Flotation Machinery">Flotation Machinery</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/beneficiation/separator.html" title="Magnetic Separator">Magnetic Separator</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/beneficiation/ball_mill.html" title="Ball Mill">Ball Mill</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="li2">
+                                    <a href="/auxiliary/">Auxiliary Equipment</a>
+                                    <div class="entry-trangle"></div>
+                                    <ul class="nav3" style="margin-top:-212px;">
+                                        <li class="li3">
+                                            <a href="/auxiliary/f5x.html" title="FH Series Vibrating Feeder">FH Vibrating Feeder</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/auxiliary/rotary.html" title="Rotary Dryer">Rotary Dryer</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/auxiliary/s5x.html" title="S5X series Vibrating Screen">S5X Vibrating Screen</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/auxiliary/screen.html" title="Circular Vibrating Screen">Circular Vibrating Screen</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/auxiliary/vibrating_feeder.html" title="Vibrating Feeder">Vibrating Feeder</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/auxiliary/tsw.html" title="TSW Series Vibrating Feeder">TSW Vibrating Feeder</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/auxiliary/ykn.html" title="YKN Series Vibrating Screen">YKN Vibrating Screen</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/auxiliary/xsd.html" title="Sand Washing Machine">Sand Washing Machine</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/auxiliary/lsx.html" title="LSX Series Sand Washing Machine">LSX Sand Washing Machine</a>
+                                        </li>
+                                        <li class="li3">
+                                            <a href="/auxiliary/belt.html" title="Belt Conveyor">Belt Conveyor</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </li>
+
+                        <li class="li1" id="mainlevel_02">
+                            <a href="/application/">
+                                <div>APPLICATION
+                                    <div class="title-line"></div>
+                                </div>
+                            </a>
+                            <ul class="nav22">
+                                <li class="li2">
+                                    <a href="/application/capacity/">Capacity Config</a>
+                                </li>
+                                <li class="li2">
+                                    <a href="/application/material/">Material Processing</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="li1" id="mainlevel_04">
+                            <a href="/project/">
+                                <div>PROJECT
+                                    <div class="title-line"></div>
+                                </div>
+                            </a>
+                            <ul class="nav22">
+                                <li class="li2">
+                                    <a href="/project/mobile/">Mobile crushing line</a>
+                                </li>
+                                <li class="li2">
+                                    <a href="/project/crushing/">Stationary crushing line</a>
+                                </li>
+                                <li class="li2">
+                                    <a href="/project/grinding/">Industrial grinding line</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="li1" id="mainlevel_03">
+                            <a href="/news/">
+                                <div>NEWS
+                                    <div class="title-line"></div>
+                                </div>
+                            </a>
+                            <ul class="nav22">
+                                <li class="li2">
+                                    <a href="/news/">News & Events</a>
+                                </li>
+                                <li class="li2">
+                                    <a href="/special_report/">Special Report</a>
+                                </li>
+                                <li class="li2">
+                                    <a href="/faq/">FAQ</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="li1" id="mainlevel_06">
+                            <a href="/about_us/">
+                                <div>ABOUT US</div>
+                            </a>
+                            <ul class="nav22">
+                                <li class="li2">
+                                    <a href="/about_us/about/">About LIMING</a>
+                                </li>
+                                <li class="li2">
+                                    <a href="/about_us/history/">LIMING History</a>
+                                </li>
+                                <li class="li2">
+                                    <a href="/about_us/service/">Service & Support</a>
+                                </li>
+                                <li class="li2">
+                                    <a href="/about_us/contact/">Contact</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="m">
+                        <li>
+                            <a href="/product/">Products</a>
+                        </li>
+                        <li>
+                            <a href="/application/">Application</a>
+                        </li>
+                        <li>
+                            <a href="/project/">Project</a>
+                        </li>
+                        <li>
+                            <a href="/news/">News</a>
+                        </li>
+                        <li>
+                            <a href="/about_us/">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script>
+        window.onscroll = function () {
+            var s_top = $(document).scrollTop();
+            var obj = document.getElementById("nav");
+            var abj = document.getElementById("nm");
+            if (s_top >= 412) {
+                obj.style.cssText = "background-color:#F0F0F0;";
+                abj.style.cssText = "background-color:#F0F0F0;";
+            } else {
+                obj.style.cssText = "rgba(255,255,255,0.42);";
+                abj.style.cssText = "none;";
+
+
+            }
+        }
+    </script> -->
+
+    <banner>
+        <div class="all_top_blue"></div>
+        <div class="clearfix"></div>
+        <div class="banner1">
+            <img src="./mofen/banner.jpg" class="ban1" />
+            <img src="./mofen/banner1.jpg" class="ban2">
+        </div>
+    </banner>
+
+    <article>
+        <div class="top-word" style="background-image:url(./mofen/title-back.jpg)">
+
+            <div class="contain">
+                <div class="word">Liming Heavy Industry
+                    <br>expands the market in 130 countries and districts
+                    <br> He accumulates experience and adopts new technology to follow tendency
+                    <br> And he has developed a series of targeted powder making project solution
+                    <br> Pendulum mill, Raymond Mill, Vertical mill, Superfine Trapezium Mill or Micro Powder Mill
+                    <br> You will find suitable grinding mill from here
+                    <span>
+                        <img src="./mofen/yinhao.png" alt="" class="yinhao">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="min-contain">
+            <div class="word">Liming Heavy Industry
+                <br>expands the market in 130 countries and districts
+                <br> He accumulates experience and adopts new technology to follow tendency
+                <br> And he has developed a series of targeted powder making project solution
+                <br> Pendulum mill, Raymond Mill, Vertical mill, Superfine Trapezium Mill or Micro Powder Mill
+                <br> You will find suitable grinding mill from here
+                <span>
+                    <img src="./mofen/yinhao.png" alt="" class="yinhao">
+                </span>
+            </div>
+        </div>
+        <div class="bg-grey">
+            <div class="container">
+                <h1>
+                    HOW TO SELECT PULVERIZING EQUIPMENT MANUFACTURER?
+                </h1>
+                <img src="./mofen/shenglue.png" alt="" class="img-responsive shenglue">
+                <div class="row-big">
+                    <div class="select-equipment col-xs-12 col-sm-4">
+                        <div class="deep-grey raduis">
+                            <img src="./mofen/power.png" alt="" class="img-responsive">
+                        </div>
+                        <h3>About enterprise strength</h3>
+                        <div class="content">To some extent, enterprise strength will influence the design idea, structure, raw materials and
+                            process, which is an important factor to inspect manufacturer. Professional manufacturer can
+                            adopt advanced technical points and combine rich experiences to create efficient pulverizing
+                            equipment. As a grinding equipment supplier with strong enterprise strength, Liming Heavy Industry
+                            is expanding the market for industrial pulverizing project based on more than 30 years of experiences.</div>
+                    </div>
+                    <div class="select-equipment col-xs-12 col-sm-4">
+                        <div class="deep-grey raduis">
+                            <img src="./mofen/chilun.png" alt="" class="img-responsive">
+                        </div>
+                        <h3>About equipment</h3>
+                        <div class="content">It is important to know about capacity, input size, output size and power, etc. specifications of
+                            equipment because main mill is the key of industrial pulverizing project. According to own requirements
+                            and performance comparison, you can choose suitable and cost-effective grinding plant. At present,
+                            Liming Heavy Industry has launched many kinds of grinding equipment aiming at industrial pulverizing
+                            project. We continue to increase the possibility of pulverizing equipment, whether in the aspect
+                            of capacity or product fineness.</div>
+                    </div>
+                    <div class="select-equipment col-xs-12 col-sm-4">
+                        <div class="deep-grey raduis">
+                            <img src="./mofen/server.png" alt="" class="img-responsive">
+                        </div>
+                        <h3>About service</h3>
+                        <div class="content">Excellent grinding equipment manufacturer will provide systemic after-sale service including installation
+                            and debugging, which can avoid many technical difficulties. With the service principle of quick
+                            response, Liming Heavy Industry is always ready to solve technical problems for customers and
+                            he hopes to improve product’ value in another aspect.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1 class="doc-h3" id="carousel-demo">
+               WHAT GRINDING PLANTS DOSE LIMING HEAVY INDUSTRY HAVE?
+            </h1>
+            <img src="./mofen/shenglue.png" alt="" class="img-responsive shenglue">
+            <div class="doc-demoview doc-viewad0">
+                <div class="view-body">
+                    <div class="banner">
+                        <div class="carousel">
+                            <div class="item">
+                                <div class="doc-carousel">
+                                    <div class="row-big">
+                                        <div class="content col-sm-6">
+                                            <h2>MB5X Pendulous Suspension Grinding Mill</h2>
+                                            <p>
+                                                <strong>Output size:</strong> 0.045-1.6mm</p>
+                                            <p>
+                                                <strong>Capacity:</strong> 4-100t/h</p>
+                                            <p>
+                                                <strong>Tag:</strong> bevel gear transmission system, thin oil lubrication system,
+                                                curved air duct with low resistance</p>
+                                            <p>
+                                                <strong>Overview:</strong>
+                                                adopting new technology from Germany and according to more than 30 years of manufacturing experience, Liming Heavy Industry researched
+                                                and developed MB5X Pendulous Suspension Grinding Mill. As a new grinding
+                                                plant with many national patents, this machine takes advantages of simple
+                                                operation, reliable running, large capacity and low energy consumption, and
+                                                it can finish intelligent control for each production link.</p>
+                                            <div class="e-mail">
+                                                <span>
+                                                    <img src="./mofen/mail.png" alt="" class="img-responsive">
+                                                </span>Email: infosh@limingco-group.com
+                                            </div>
+                                            <a href=""><div class="leave">
+                                                <img src="./mofen/duihua.png" alt="" class="img-responsive">Leave Message
+                                            </div></a>
+                                        </div>
+                                        <div class="pro-pic col-sm-6">
+                                            <a href=""><img src="./mofen/lunbo_1.jpg" alt="" class="img-responsive"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="item">
+                                <div class="doc-carousel">
+                                    <div class="row-big">
+                                        <div class="content col-sm-6">
+                                            <h2>MTW European Trapezium Mill</h2>
+                                            <p>
+                                                <strong>Output size:</strong> 0.045-1.6mm</p>
+                                            <p>
+                                                <strong>Capacity:</strong> 4-50t/h</p>
+                                            <p>
+                                                <strong>Tag:</strong> grinding roller linkage turbocharging technology; curved air
+                                                duct, air self circulation system</p>
+                                            <p>
+                                                <strong>Overview:</strong>
+                                                as a hot product in Liming Heavy Industry, MTW European Trapezium Mill has sold to 130 countries and districts to process
+                                                all kinds of nonmetallic ores or other materials. This machine takes advantages
+                                                of advanced technology, economic investment and green process, which can
+                                                meet fineness requirement with range from 0.045mm to 1.6mm. </p>
+                                            <div class="e-mail">
+                                                <span>
+                                                    <img src="./mofen/mail.png" alt="" class="img-responsive">
+                                                </span>Email: infosh@limingco-group.com
+                                            </div>
+                                            <a href=""><div class="leave">
+                                                <img src="./mofen/duihua.png" alt="" class="img-responsive">Leave Message
+                                            </div></a>
+                                        </div>
+                                        <div class="pro-pic col-sm-6">
+                                            <a href=""><img src="./mofen/lunbo_2.jpg" alt="" class="img-responsive"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+
+                                <div class="doc-carousel">
+                                    <div class="row-big">
+                                        <div class="content col-sm-6">
+                                            <h2>LM Vertical Mill</h2>
+                                            <p>
+                                                <strong>Output size:</strong> 80-325mesh</p>
+                                            <p>
+                                                <strong>Capacity:</strong> 10-320t/h</p>
+                                            <p>
+                                                <strong>Tag:</strong> energy consumption is reduced by 30%-40% compared with ball
+                                                mill, high drying efficiency</p>
+                                            <p>
+                                                <strong>Overview:</strong>
+                                                integrating drying, milling, classifying and transportation together, LM Vertical Mill is grinding plant concentrating on
+                                                nonmetallic ore, coal powder and slag, etc. three fields. This machine takes
+                                                advantages of simple structure and compact layout, and the automatic control
+                                                system help it finish remote control.</p>
+                                            <div class="e-mail">
+                                                <span>
+                                                    <img src="./mofen/mail.png" alt="" class="img-responsive">
+                                                </span>Email: infosh@limingco-group.com
+                                            </div>
+                                            <a href=""><div class="leave">
+                                                <img src="./mofen/duihua.png" alt="" class="img-responsive">Leave Message
+                                            </div></a>
+                                        </div>
+                                        <div class="pro-pic col-sm-6">
+                                            <a href=""><img src="./mofen/lunbo_3.jpg" alt="" class="img-responsive"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lin-big all-content">
+                <div class="col-xs-12">
+                    <img src="./mofen/lunbo_1.jpg" alt="" class="pro-pic img-responsive">
+                    <div class="pro-intro col-xs-12">
+                        <div class="content">
+                            <h2>MB5X Pendulous Suspension Grinding Mill</h2>
+                            <p>
+                                <strong>Output size:</strong> 0.045-1.6mm</p>
+                            <p>
+                                <strong>Capacity:</strong> 4-100t/h</p>
+                            <p>
+                                <strong>Tag:</strong> bevel gear transmission system, thin oil lubrication system, curved air duct
+                                with low resistance</p>
+                            <p>
+                                <strong>Overview:</strong>
+                                adopting new technology from Germany and according to more than 30 years of manufacturing experience, Liming Heavy Industry researched
+                                and developed MB5X Pendulous Suspension Grinding Mill. As a new grinding plant with many
+                                national patents, this machine takes advantages of simple operation, reliable running, large
+                                capacity and low energy consumption, and it can finish intelligent control for each production
+                                link.
+                            </p>
+                            <div class="e-mail">
+                                <span>
+                                    <img src="./mofen/mail.png" alt="" class="img-responsive">
+                                </span>Email: infosh@limingco-group.com
+                            </div>
+                            <a href=""><div class="leave">
+                                <img src="./mofen/duihua.png" alt="" class="img-responsive">Leave Message
+                            </div></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-content col-xs-12">
+                    <img src="./mofen/lunbo_2.jpg" alt="" class="pro-pic img-responsive">
+                    <div class="pro-intro col-xs-12">
+                        <div class="content">
+                            <h2>MTW European Trapezium Mill</h2>
+                            <p>
+                                <strong>Output size:</strong> 0.045-1.6mm</p>
+                            <p>
+                                <strong>Capacity:</strong> 4-50t/h</p>
+                            <p>
+                                <strong>Tag:</strong> grinding roller linkage turbocharging technology; curved air duct, air self
+                                circulation system</p>
+                            <p>
+                                <strong>Overview:</strong>
+                                as a hot product in Liming Heavy Industry, MTW European Trapezium Mill has sold to 130 countries and districts to process
+                                all kinds of nonmetallic ores or other materials. This machine takes advantages of advanced
+                                technology, economic investment and green process, which can meet fineness requirement with
+                                range from 0.045mm to 1.6mm. </p>
+                            <div class="e-mail">
+                                <span>
+                                    <img src="./mofen/mail.png" alt="" class="img-responsive">
+                                </span>Email: infosh@limingco-group.com
+                            </div>
+                            <a href=""><div class="leave">
+                                <img src="./mofen/duihua.png" alt="" class="img-responsive">Leave Message
+                            </div></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-content col-xs-12">
+                    <img src="./mofen/lunbo_3.jpg" alt="" class="pro-pic img-responsive">
+                    <div class="pro-intro col-xs-12">
+                        <div class="content col-sm-6">
+                            <h2>LM Vertical Mill</h2>
+                            <p>
+                                <strong>Output size:</strong> 80-325mesh</p>
+                            <p>
+                                <strong>Capacity:</strong> 10-320t/h</p>
+                            <p>
+                                <strong>Tag:</strong> energy consumption is reduced by 30%-40% compared with ball mill, high drying
+                                efficiency
+                            </p>
+                            <p>
+                                <strong>Overview:</strong>
+                                integrating drying, milling, classifying and transportation together, LM Vertical Mill is grinding plant concentrating on
+                                nonmetallic ore, coal powder and slag, etc. three fields. This machine takes advantages of
+                                simple structure and compact layout, and the automatic control system help it finish remote
+                                control.
+                            </p>
+                            <div class="e-mail">
+                                <span>
+                                    <img src="./mofen/mail.png" alt="" class="img-responsive">
+                                </span>Email: infosh@limingco-group.com
+                            </div>
+                            <a href=""><div class="leave">
+                                <img src="./mofen/duihua.png" alt="" class="img-responsive">Leave Message
+                            </div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bg-grey">
+            <div class="container">
+                <h1 class="doc-h3" id="carousel-demo">
+                    WHAT DOSE INTEGRATED SOLUTION INCLUDE?
+                </h1>
+                <img src="./mofen/shenglue.png" alt="" class="img-responsive shenglue">
+                <div class="row-big">
+                    <div class="integrated col-xs-12 col-sm-12">
+                        <div class="pic col-xs-12 col-sm-2">
+                            <div class="pic-border">
+                                <img src="./mofen/kaocha_db.png" alt="" class="img-responsive db">
+                                <div class="brief-grey">
+                                    <img src="./mofen/kaocha.png" alt="" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content col-xs-12 col-sm-8">
+                            <h3>Production line planning</h3>
+                            <p>Liming Heavy Industry will design production line by on-the-spot investigation, and we will try
+                                our best to avoid the environmental effect and realize the maximum use of production site.</p>
+                            <img src="./mofen/line-ball.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+
+                    <div class="integrated col-xs-12">
+                        <div class="pic col-xs-12 first">
+                            <div class="pic-border">
+                                <img src="./mofen/guihua_db.png" alt="" class="img-responsive db">
+                            </div>
+                        </div>
+                        <div class="content col-xs-12 col-sm-8 col-sm-2-move">
+                            <h3>Equipment recommendation</h3>
+                            <p>According to customers’ requirements, Liming Heavy Industry will do one to one scheme and recommend
+                                cost-effective grinding plant with concrete model for clients. </p>
+                            <img src="./mofen/line-ball-left.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="pic col-sm-2 second">
+                            <div class="pic-border">
+                                <img src="./mofen/guihua_db.png" alt="" class="img-responsive db">
+                                <div class="brief-grey">
+                                    <img src="./mofen/guihua.png" alt="" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="integrated col-xs-12">
+                        <div class="pic col-xs-12 col-sm-2">
+                            <div class="pic-border">
+                                <img src="./mofen/jiage_db.png" alt="" class="img-responsive db">
+                                <div class="brief-grey">
+                                    <img src="./mofen/jiage.png" alt="" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content col-xs-12 col-sm-8">
+                            <h3>Investment analysis</h3>
+                            <p>In order to help customers know about investment situation, Liming Heavy Industry will do detailed
+                                price analysis on each pare part, which can make investment reasonable.</p>
+                            <img src="./mofen/line-ball.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="site">
+            <div class="container">
+                <h1>WHERE CAN I SEE THE PRODUCTION SITE?</h1>
+                <img src="./mofen/shenglue.png" alt="" class="img-responsive shenglue">
+                <div class="row-big">
+                    <div class="pro-all col-sm-12">
+                        <div class="pro-pic col-xs-12 nodis">
+                            <img src="./mofen/anli_1.jpg" alt="" class="img-responsive">
+                        </div>
+
+                        <div class="pro-intro col-xs-12 col-sm-6 col-md-7 dis">
+                            <img src="./mofen/green_a.png" alt="" class="img-responsive green">
+                            <div class="intro">
+                                <h2>8-10TPH Limestone Grinding Plant in Kenya</h2>
+                                <div class="xinhao">
+                                    <p>
+                                        <strong>Equipment:</strong> MTW138 Grinding Mill</p>
+                                    <p>
+                                        <strong>Material:</strong> limestone</p>
+                                    <p>
+                                        <strong>Capacity:</strong> 8-10 t/h</p>
+                                    <p>
+                                        <strong>Output size:</strong> 225 mesh</p>
+                                </div>
+                                <div class="learn">Learn More
+                                    <img src="./mofen/green_jiahao.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-pic col-xs-12 col-sm-6 col-md-5 dis">
+                            <a href=""><img src="./mofen/anli_1.jpg" alt="" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="pro-all col-sm-12">
+                        <div class="pro-pic col-xs-12 col-sm-6 col-md-5">
+                            <a href=""><img src="./mofen/anli_b.jpg" alt="" class="img-responsive"></a>
+                        </div>
+                        <div class="pro-intro col-xs-12 col-sm-6 col-md-7 dis">
+
+                            <div class="intro">
+                                <h2>10-15TPH Alumina Grinding Plant in China</h2>
+                                <div class="xinhao">
+                                    <p>
+                                        <strong>Equipment:</strong> MTW175 Grinding Mill</p>
+                                    <p>
+                                        <strong>Capacity:</strong>10-15t/h</p>
+                                    <p>
+                                        <strong>Input size:</strong>20-30mm </p>
+                                    <p>
+                                        <strong>Output size:</strong> 150 mesh</p>
+                                </div>
+                                <div class="learn">Learn More
+                                    <img src="./mofen/green_jiahao.jpg" alt="">
+                                </div>
+                            </div>
+                            <img src="./mofen/green_b.png" alt="" class="img-responsive green">
+                        </div>
+                    </div>
+                    <div class="pro-all col-sm-12">
+                        <div class="pro-pic col-xs-12 col-sm-6 col-md-5 nodis">
+                            <a href="">
+                                <img src="./mofen/anli_c.jpg" alt="" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="pro-intro col-xs-12 col-sm-6 col-md-7 dis">
+                            <img src="./mofen/green_c.png" alt="" class="img-responsive green">
+                            <div class="intro">
+                                <h2>10TPH Gypsum Grinding Plant in Iran</h2>
+                                <div class="xinhao">
+                                    <p>
+                                        <strong>Equipment:</strong> MTW175 European Type Trapezium Mill</p>
+                                    <p>
+                                        <strong>Capacity:</strong>10t/h</p>
+                                    <p>
+                                        <strong>Input size:</strong>10-30mm </p>
+                                    <p>
+                                        <strong>Output size:</strong> 200-325mesh</p>
+                                </div>
+                                <div class="learn">Learn More
+                                    <img src="./mofen/green_jiahao.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-pic col-xs-12 col-sm-6 col-md-5 dis">
+                            <img src="./mofen/anli_c.jpg" alt="" class="img-responsive">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="processed">
+            <div class="img-side">
+                <img src="./mofen/bottom.jpg" alt="" class="img-big">
+            </div>
+            <div class="full">
+                <div class="container">
+                    <h1 class="doc-h3" id="carousel-demo">
+                        PROCESSED MATERIALS
+                    </h1>
+                    <img src="./mofen/shenglue.png" alt="" class="img-responsive shenglue">
+                    <div class="row-big">
+                        <div class="mater col-xs-12 col-sm-4">
+                            <div class="title">Gypsum</div>
+                            <img src="./mofen/gypsum.jpg" alt="" class="img-responsive dis">
+                            <img src="./mofen/bottom_left.jpg" alt="" class="img-responsive">
+                            <div class="intro">
+                                <img src="./mofen/background.png" alt="" class="img-responsive">
+                                <div class="intro-in">
+                                    <p>Gypsum, a kind of industrial material and building material, has a wide application in many industries, such as cement retarder, gypsum building product, model building, food additives, sulphuric acid production, paper packing and paint filler. </p>
+                                    <a href=""><div class="learn-more">Learn More
+                                        <img src="./mofen/green_jiahao.jpg" alt="">
+                                    </div></a>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="mater col-xs-12 col-sm-4">
+                            <div class="title">Feldspar</div>
+                            <img src="./mofen/gypsum.jpg" alt="" class="img-responsive dis">
+                            <img src="./mofen/bottom_middle.jpg" alt="" class="img-responsive">
+                            <div class="intro">
+                                    <img src="./mofen/background.png" alt="" class="img-responsive">
+                                    <div class="intro-in">
+                                        <p>Feldspar is one of the most common minerals in the crust, which accounts for 60 percent of the earth's crust.  Feldspar is main component of igneous rock,  and containing potassium or sodium can be used in ceramics, glass and enamel industry.
+                                            </p>
+                                        <a href=""><div class="learn-more">Learn More
+                                            <img src="./mofen/green_jiahao.jpg" alt="">
+                                        </div></a>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="mater col-xs-12 col-sm-4">
+                            <div class="title">Barite</div>
+                            <img src="./mofen/gypsum.jpg" alt="" class="img-responsive dis">
+                            <img src="./mofen/bottom_right.jpg" alt="" class="img-responsive">
+                            <div class="intro">
+                                    <img src="./mofen/background.png" alt="" class="img-responsive">
+                                    <div class="intro-in">
+                                        <p>Barite can be used as white pigment, and it is also applied in chemical, paper making and textile industry. When producing glass, barite can brighten glass as fluxing agent. Besides, the most important function of barite is applied in drilling industry as weighting agent and refining barium.</p>
+                                        <a href=""><div class="learn-more">Learn More
+                                            <img src="./mofen/green_jiahao.jpg" alt="">
+                                        </div></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </article>
+
+    <div class="clearfix"></div>
+    <div id="sh_message" class=""></div>
+    {dede:include filename="how_report.htm"/}
+    {dede:include filename="foot.htm"/}
+    <script>
+        if ($(window).width() > 1199) {
+            var ro = setInterval("rotate(window.id1)",2500);
+            $(".worldmap").hover(function () {
+                clearInterval(ro);
+                $(".worldmap").removeClass("active");
+                $(this).addClass("active");
+                $(".sec5 .col-md-6").eq($(this).index() - 2).find(".worldCase").stop().show();
+            }, function () {
+                ro = setInterval("rotate(window.id)",2500);
+                $(".sec5 .col-md-6").find(".worldCase").stop().hide();
+            })
+            $(".worldCase").hover(function () {
+                $(this).show();
+            }, function () {
+                $(this).hide();
+            })
+        }
+        function rotate(a){
+            id = Math.floor(Math.random()*6);
+            if(a==id){
+                rotate(id);
+            }else{
+                $(".worldmap").removeClass("active").eq(id).addClass("active");
+                window.id1=id;
+            }
+        }
+    </script>
+    <script>
+    if ($(window).width() > 768) {
+        $(".pro1").mouseenter(function () {
+            $(".pro1").removeClass("active");
+            $(this).addClass("active");
+            $(".sec3 div").removeClass("active");
+            $(".sec3 div").eq($(this).parent().index()).addClass("active");
+        })
+        /*$(".sec2 a").click(function (e) {
+            e.preventDefault();
+        });*/
+    }
+    </script>
+    </body>
+</html>

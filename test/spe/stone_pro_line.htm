@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{dede:field.title /} - LIMING(Shanghai)</title>
+        <meta name="keywords" content="{dede:field.keywords /}" />
+        <meta name="description" content="{dede:field.description /}"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=10" />
+        <link rel="stylesheet" type="text/css" href="/css/glyphicons.css">
+    <link rel="stylesheet" type="text/css" href="/css/sr/inside.css">
+  <link rel="stylesheet" type="text/css" href="/css/sr/media.css">
+  <link rel="stylesheet" href="/css/sr/head.css">
+  <link rel="stylesheet" href="/css/sr/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./stone_production_line/index.css">
+        <script src="/js/jquery-1.11.3.min.js"></script>
+    </head>
+    
+    <body>
+        <!--顶端导航-->
+        <div class="top" style="width:100%;background-color: #fff;z-index: 10000;background-color: #fff;position:relative;top:0">
+            <header class="container">
+                <a href="/">
+                    <img src="./stone_production_line/logo.png"></a>
+                <ul>
+                    <li>О Нас</li>
+                    <li>Оборудование</li>
+                    <li>Конфигурация</li>
+                    <li>Кейс</li>
+                    <li>Вопрос и ответ</li>
+                    <li>Запрос</li>
+                    </ul>
+                <a class="mail" href="mailto:infosh@limingco-group.com">Email:infosh@limingco-group.com</a></header>
+        </div>
+        <div class="rightFix">
+            <div style="width:127px;height: 107px;cursor: pointer" onclick="openZoosUrl('chatwin');">
+                    </div>
+            <ul class="list-unstyle">
+                <li>О Нас</li>
+                <li>Оборудование</li>
+                <li>Конфигурация</li>
+                <li>Кейс</li>
+                <li>Вопрос и ответ</li>
+                <li>Запрос</li>
+            </ul>
+            <a href="#"><p>Вверх</p></a>
+        </div>
+        <!--banner-->
+        <div class="clearfix"></div>
+        <div class="banner1">
+            <div class="bannerForm">
+                <p class="formHead">Получите цену</p>
+                <form class="formBody" action="https://data.break-day.com/post_do.php" method="POST" onsubmit="return dosubmit1(this)">
+                	<input type="hidden" name="url" id="url" value="" />
+                	<script>document.getElementById("url").value = window.location.href;</script>
+                    <input type="text" name="name" class="input" placeholder="&nbsp;И.Ф.О"/>
+                    <input type="text" name="email" class="input" placeholder="&nbsp;E-mail"/>
+                    <select name="product" class="input" id="product">
+                        <option value="" disabled selected style="display: none" class="formDis">Продукт</option>
+                        <option value="Мобильная дробилка">Мобильная дробилка</option>
+                        <option value="Стационарная линия">Стационарная линия</option>
+                        <option value="Мельницы для помола">Мельницы для помола</option>
+                        <option value="Центробежная дробилка">Центробежная дробилка</option>
+                    </select>
+                    <select class="input" name="message" id="capacity">
+                        <option value="" disabled selected style="display: none" class="formDis">Произыодительность</option>
+                        <option value="Произыодительность:500-800T/H">500-800T/H</option>
+                        <option value="Произыодительность:300-500T/H">300-500T/H</option>
+                        <option value="Произыодительность:200-300T/H">200-300T/H</option>
+                        <option value="Произыодительность:100-200T/H">100-200T/H</option>
+                        <option value="Произыодительность:50-100T/H">50-100T/H</option>
+                        <option value="Произыодительность:30-50T/H">30-50T/H</option>
+                        <option value="Произыодительность:&lt;30T/H">&lt;30T/H</option>
+                    </select>
+                    <select class="input" name="message" id="materials">
+                        <option value="" disabled selected style="display: none" class="formDis">Материалы</option>
+                        <option value="Материалы:Известняк; ">Известняк</option>
+                        <option value="Материалы:Базальт">Базальт</option>
+                        <option value="Материалы:Галька">Галька </option>
+                        <option value="Материалы:Гравий">Гравий </option>
+                        <option value="Материалы:Гипс">Гипс</option>
+                        <option value="Материалы:Мрамор">Мрамор </option>
+                        <option value="Материалы:шпат">шпат </option>
+                        <option value="Материалы:Кварц">Кварц</option>
+                        <option value="Материалы:Доломит">Доломит </option>
+                        <option value="Материалы:Золотые руды">Золотые руды</option>
+                        <option value="Другие">Другие</option>
+                    </select>
+                    <input type="submit" value="Отправить" class="formSubmit">
+                </form>
+                <script>
+                    $("#product,#capacity,#materials").css('color','#999');
+                    $("#product,#capacity,#materials").change(function(){
+                        $(this).css('color','#000');
+                    })
+                </script>
+            </div>
+            <div class="banner" data-pointer="1" data-interval="6" data-item="1" data-small="1" data-middle="1" data-big="1" data-style="border-red">
+                    <ul class="carousel">
+                        <li class="item"><img src="./stone_production_line/banner1.jpg" class="ban1"/>
+                            <img src="./stone_production_line/banner1_s.jpg" class="ban2">
+                        </li>
+                        <li class="item"><img src="./stone_production_line/banner2.jpg" class="ban1"/>
+                            <img src="./stone_production_line/banner2_s.jpg" class="ban2">
+                        </li>
+                        <li class="item"><img src="./stone_production_line/banner3.jpg" class="ban1"/>
+                            <img src="./stone_production_line/banner3_s.jpg" class="ban2">
+                        </li>
+                        <li class="item"><img src="./stone_production_line/banner4.jpg" class="ban1"/>
+                            <img src="./stone_production_line/banner4_s.jpg" class="ban2">
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        <!--导读-->
+            <article class="container art1">
+                <h1 class="anchor">
+                    Почему выбирают <span>ЗАО «Лимин Наука и Техника»</span>
+                </h1>
+                <section class="row-big sec1">
+                    <div class="col-md-3">
+                        <img src="./stone_production_line/company.jpg"  class="img-responsive" alt="">
+                        <h4>Сила компании</h4>
+                        <p>
+                            Благодаря современному цеху с площадью 300 000 квадратных метров, ЗАО «Лимин Наука и Техника» полностью использует интеллектуальные инструменты для улучшения производственных мощностей и уровня технологического процесса.
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="./stone_production_line/advantage.jpg"  class="img-responsive" alt="">
+                        <h4>Преимущества оборудования</h4>
+                        <p>
+                            В соответствии с 30-летним опытом и международной концепцией, ЗАО «Лимин Наука и Техника» делает свою продукцию продвинутой, интеллектуальной и эффективной.
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="./stone_production_line/solution.jpg"  class="img-responsive" alt="">
+                        <h4>Изготовленное решение по заказу</h4>
+                        <p>
+                            Технический инжинер ЗАО «Лимин Наука и Техника» проведет расследование на месте и предоставит индивидуальное изготовленное решение по заказу, В соответствии с особыми требованиями клиентов.
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="./stone_production_line/service.jpg"  class="img-responsive" alt="">
+                        <h4>Отличное обслуживание</h4>
+                        <p>
+                            ЗАО «Лимин Наука и Техника» обеспечит бизнес-прием, индивидуальную программу, установку оборудования и регулярный визит. И менеджер будет участвовать один-на-один во всем проекте для предоставления предложений.
+                        </p>
+                    </div>
+                </section>
+            </article>
+            <article class="art2">
+                <section class="container sec2">
+                    <h1 class="anchor">Связанное <span>оборудование</span></h1>
+                    <div class="row">
+                        
+                            <div class="col-md-5 equip aa clearfix">
+                                <div class="col-md-7 col-sm-6">
+                                    <a href="/crushing/pew.html"><p class="eTitle">Щековая дробилка европейского типа</p></a>
+                                    <p class="eIntro">передовая технология и надежное качество<br/>Хорошие материалы и прочные детали<br/>Стабильная и безопасная работа<br/>Сильная грузоподъемность и длительный срок службы</p>
+                                </div>
+                                <div class="col-md-4 col-sm-6">
+                                    <a href="/crushing/pew.html"><img src="./stone_production_line/a1.png" class="img-responsive img-cen" alt=""></a>
+                                </div>
+                            </div>
+                        
+                        <div class="col-md-2"></div>
+                        
+                            <div class="col-md-5 equip bb clearfix">
+                                <div class="col-md-4 col-sm-6">
+                                    <a href="/crushing/pfw.html"><img src="./stone_production_line/b1.png" class="img-responsive img-cen" alt=""></a>
+                                </div>
+                                <div class="col-md-7 col-md-1-move col-sm-6 ">
+                                    <a href="/crushing/pfw.html"><p class="eTitle">Роторная дробилка европейского типа</p></a>
+                                    <p class="eIntro">Тяжелый ротор<br/>Уникальное устройство фиксации молотка<br/>Полуавтоматическое регулировочное устройство<br/>Открытое верхнее устройство</p>
+                                </div>
+                            </div>
+                        
+                        <div class="clearfix"></div>
+                        <div class="hidden-m hidden-b" style="margin-bottom: 40px;">
+                            <img src="./stone_production_line/circle1.png" class="img-responsive img-cen" alt="">
+                        </div>
+                        
+                            <div class="col-md-5 equip cc clearfix">
+                                <div class="col-md-7 col-sm-6">
+                                    <a href="/crushing/hpt.html"><p class="eTitle">Гидравлическая конусная дробилка HPT</p></a>
+                                    <p class="eIntro">Эффективность повышается на 5-15%<br/>Мощность повышается на 35-60%<br/>Принцип дробления ламинирования<br/>Система управления гидравлической смазкой</p>
+                                </div>
+                                <div class="col-md-4 col-sm-6">
+                                    <a href="/crushing/hpt.html"><img src="./stone_production_line/c1.png" class="img-responsive img-cen" alt=""></a>
+                                </div>
+                            </div>
+                        
+                        <div class="col-md-2"></div>
+                        
+                            <div class="col-md-5 equip dd clearfix">
+                                <div class="col-md-5 col-sm-6">
+                                    <a href="/sand/vsi6x.html"><img src="./stone_production_line/d1.png" class="imgSpecB imgSpecS img-cen" alt=""></a>
+                                </div>
+                                <div class="col-md-7 col-sm-6">
+                                    <a href="/sand/vsi6x.html"><p class="eTitle">Дробилка для производства песка VSI6X</p></a>
+                                    <p class="eIntro">Четыре открытия крыльчатки структуры<br/>Специальная уплотнительная структура<br/>Дробление между материалами<br/>Новое подъемное устройство</p>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </section>
+            </article>
+            <article class="container art3">
+                <h1 class="anchor">Решения <span>конфигурации</span></h1>
+                <section class="row-big sec3">
+                    <div class="col-sm-12">
+                        <div class="clearfix">
+                            <div class="col-md-3 bocol-xs-1">
+                                <img src="./stone_production_line/200th.jpg" class="img-responsive img-cen is" alt="">
+                                <img src="./stone_production_line/200th_b.jpg" class="img-responsive img-cen ib" alt="">
+                            </div>
+                            <div class="col-md-2 bocol-xs-2">
+                                <p>200т/ч</p>
+                                <p>Производительность</p>
+                            </div>
+                            <div class="col-md-3 bocol-xs-3">
+                                <p>Щековая дробилка</p>
+                                <p>роторная дробилка европейского типа</p>
+                                <p>вибрационный грохот</p>
+                            </div>
+                            <div class="col-md-4 bocol-xs-4">
+                                <form action="https://data.break-day.com/post_do.php" method="POST" onsubmit="return dosubmit2(this)">
+                                    <input type="text" class="input capaInput" placeholder="Напишите ваш E-mail" name="email"><input type="submit" class="capaSubmit" value="Получить цитату">
+                                    <input type="hidden" name="product" value="Jaw Crusher">
+                                    <input type="hidden" name="message" id="capacity" value="Capacity:200T/H">
+                                    <input type="hidden" name="message" id="materials" value="Materials:Stone Crusher">
+                                    <input type="hidden" name="name" value="">
+                                    <input type="hidden" name="url" id="url" value="" />
+                					<script>document.getElementById("url").value = window.location.href;</script>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="clearfix">
+                            <div class="col-md-3 bocol-xs-1">
+                                <img src="./stone_production_line/300th.jpg" class="img-responsive img-cen is" alt="">
+                                <img src="./stone_production_line/300th_b.jpg" class="img-responsive img-cen ib" alt="">
+                            </div>
+                            <div class="col-md-2 bocol-xs-2">
+                                <p>300т/ч</p>
+                                <p>Производительность</p>
+                            </div>
+                            <div class="col-md-3 bocol-xs-3">
+                                <p>Щековая дробилка</p>
+                                <p>Гидравлическая конусная дробилка HST</p>
+                                <p>дробилка для производства песка VSI5X</p>
+                            </div>
+                            <div class="col-md-4 bocol-xs-4">
+                                <form action="https://data.break-day.com/post_do.php" method="POST" onsubmit="return dosubmit2(this)">
+                                    <input type="text" class="input capaInput" placeholder="Напишите ваш E-mail" name="email"><input type="submit" class="capaSubmit" value="Получить цитату">
+                                    <input type="hidden" name="product" value="Jaw Crusher">
+                                    <input type="hidden" name="message" id="capacity" value="Capacity:300T/H">
+                                    <input type="hidden" name="message" id="materials" value="Materials:Stone Crusher">
+                                    <input type="hidden" name="name" value="">
+                                    <input type="hidden" name="url" id="url" value="" />
+                					<script>document.getElementById("url").value = window.location.href;</script>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="clearfix">
+                            <div class="col-md-3 bocol-xs-1">
+                                <img src="./stone_production_line/500th.jpg" class="img-responsive img-cen is" alt="">
+                                <img src="./stone_production_line/500th_b.jpg" class="img-responsive img-cen ib" alt="">
+                            </div>
+                            <div class="col-md-2 bocol-xs-2">
+                                <p>500т/ч</p>
+                                <p>Производительность</p>
+                            </div>
+                            <div class="col-md-3 bocol-xs-3">
+                                <p>Щековая дробилка европейского типа</p>
+                                <p>роторная дробилка европейского типа</p>
+                                <p>вибрационный грохот</p>
+                            </div>
+                            <div class="col-md-4 bocol-xs-4">
+                                <form action="https://data.break-day.com/post_do.php" method="POST" onsubmit="return dosubmit2(this)">
+                                    <input type="text" class="input capaInput" placeholder="Напишите ваш E-mail" name="email"><input type="submit" class="capaSubmit" value="Получить цитату">
+                                    <input type="hidden" name="product" value="European Type Jaw Crusher">
+                                    <input type="hidden" name="message" id="capacity" value="Capacity:500T/H">
+                                    <input type="hidden" name="message" id="materials" value="Materials:Stone Crusher">
+                                    <input type="hidden" name="name" value="">
+                                    <input type="hidden" name="url" id="url" value="" />
+                					<script>document.getElementById("url").value = window.location.href;</script>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="clearfix">
+                            <div class="col-md-3 bocol-xs-1">
+                                <img src="./stone_production_line/700th.jpg" class="img-responsive img-cen is" alt="">
+                                <img src="./stone_production_line/700th_b.jpg" class="img-responsive img-cen ib" alt="">
+                            </div>
+                            <div class="col-md-2 bocol-xs-2">
+                                <p>700-800т/ч</p>
+                                <p>Производительность</p>
+                            </div>
+                            <div class="col-md-3 bocol-xs-3">
+                                <p>Щековая дробилка</p>
+                                <p>Гидравлическая конусная дробилка HST</p>
+                                <p>дробилка для производства песка VSI5X</p>
+                            </div>
+                            <div class="col-md-4 bocol-xs-4">
+                                <form action="https://data.break-day.com/post_do.php" method="POST" onsubmit="return dosubmit2(this)">
+                                    <input type="text" class="input capaInput" placeholder="Напишите ваш E-mail" name="email"><input type="submit" class="capaSubmit" value="Получить цитату">
+                                    <input type="hidden" name="product" value="Jaw Crusher">
+                                    <input type="hidden" name="message" id="capacity" value="Capacity:700-800T/H">
+                                    <input type="hidden" name="message" id="materials" value="Materials:Stone Crusher">
+                                    <input type="hidden" name="name" value="">
+                                    <input type="hidden" name="url" id="url" value="" />
+                					<script>document.getElementById("url").value = window.location.href;</script>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article class="art4">
+                <section class="container sec4">
+                    <h1 class="anchor">CLASSIC <span>CASE</span></h1>
+                    <div class="row-big">
+                        <a href="/project/crushing/chile.html">
+                            <div class="col-md-6 case1St">
+                                <div class="case">
+                                    <img src="./stone_production_line/case1.jpg" class="img-responsive img-max" alt="">
+                                    <div class="caseIntro">
+                                        <p><b>Место проекта:</b> Копьяпо, Чили.</p>
+                                        <p><b>Главные оборудованиидования:</b> 4шт.ударные дробилки VSI5X1145, щековая дробилка РЕ900х1200, конусная дробилка CSB240, виброгрохот3YZS2160</p>
+                                        <p><b>Сырье:</b> Железные руды</p>
+                                        <p><b>Производительность:</b> 300-400 т/ч</p>
+                                        <p><b>Входный размер:</b> 0-750мм</p>
+                                        <p><b>Выходный размер:</b> 0-6мм</p>
+                                    </div>
+                                </div>
+                                <p class="caseTitle">Проек в Копьяпо в Чили <br class="dis"/>для обработки железных руд</p>
+                            </div>
+                        </a>
+                        <a href="/project/crushing/tajikistan.html">
+                            <div class="col-md-6">
+                                <div class="case">
+                                    <img src="./stone_production_line/case2.jpg" class="img-responsive img-max" alt="">
+                                    <div class="caseIntro">
+                                        <p><b>Место проекта:</b> Таджикистан</p>
+                                        <p><b>Главные оборудованиидования:</b> Щековая дробилка PE900*1200, роторная дробилка европейского типа PFW1318II, роторная дробилка европейского типа PFW1415III.</p>
+                                        <p><b>Сырье:</b> Песчаники</p>
+                                        <p><b>Производительность:</b> 350-400 т/ч</p>
+                                        <p><b>Входный размер:</b> 800мм</p>
+                                        <p><b>Выходный размер:</b> 0-5мм, 5-10мм,10-20мм,20-40мм</p>
+                                    </div>
+                                </div>
+                                <p class="caseTitle">Производственная линия для <br class="dis"/>разработки песчаники в Таджикистане</p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </article>
+            <article class="container art5">
+                <h1 class="anchor">Запросить <span>онлайн</span></h1>
+                <section class="row-big sec5">
+                    <ul class="list-unstyle col-sm-12">
+                        <li>
+                            <p class="onlineQ"><span>Q:</span>Какие материалы может обрабатывать линия по дроблению камня? И твердые материалы?</p>
+                            <p class="onlineA"><span>A:</span>Эта производственная линия может обрабатывать все виды материалов, и мягкие камни и твердые камни, такие как речной камень, гранит, базальт, известняк, железная руда и т. д.</p>
+                        </li>
+                        <li>
+                            <p class="onlineQ"><span>Q:</span>Сколько я должен потратить, если я буду инвестировать производственную линию щебня 300т/ч?</p>
+                            <p class="onlineA"><span>A:</span>Помимо производительности, нам ещё нужно узнать какие обработанные материалы, входной размер, выходный размер и т.д. Вы можете оставить сообщение или контактную информацию, наш специалист свяжится с вами и предоставит подходящую цену. Просто покупайте наше оборудование, потому что это даст вам сюрприз экономичным способом.</p>
+                        </li>
+                        <li>
+                            <p class="onlineQ"><span>Q:</span>Есть ли производственная площадка в России?</p>
+                            <p class="onlineA"><span>A:</span>Да, есть. В России есть производственная площадка , на которой можно посмотреть,  кроме того у нас ещё есть представительство в России. Вы можете посетить его или позвонить по горячей линии, если есть какие-либо вопросы. наши консультанты сразу вас ответят.</p>
+                        </li>
+                        <li>
+                            <p class="onlineQ"><span>Q:</span>Кроме этих продуктов, Есть ли у вас другие продукты?</p>
+                            <p class="onlineA"><span>A:</span>ЗАО «Лимин Наука и Техника» имеет много видов продукты, включая дробильное оборудование, дробилка для производства песка, мельничное оборудование и передвижную дробилку. Мы предоставим вам индивидуальные решения и подходящий продукт.</p>
+                        </li>
+                        <li>
+                            <p class="onlineQ"><span>Q:</span>Предоставляете ли вы послепродажное обслуживание?</p>
+                            <p class="onlineA"><span>A:</span>ЗАО «Лимин Наука и Техника» не только обеспечивает решение и оборудование, и также предлагает установку, отладку, техническую консультацию и обучение эксплуатации. Все это сделает ваш проект удобным.</p>
+                        </li>
+                        <li>
+                            <p class="onlineQ"><span>Q:</span>Можете ли вы дать подробный адрес компании? Я хочу посетить вашу компанию для получения дополнительной информации.</p>
+                            <p class="onlineA"><span>A:</span>Добро пожаловать в вашу компанию, и мы обеспечим лучший бизнес-прием. Вы можете запрашивать онлайн или оставить сообщение по вашему требованием, наш инженер-специалист обязательно свяжится с вами!</p>
+                        </li>
+                    </ul>
+
+                </section>
+            </article>
+
+        
+        
+        
+        <div class="clearfix"></div>
+        <div id="sh_message" class="anchor"></div>
+        {dede:include filename="how_report.htm"/}
+        {dede:include filename="foot_report.htm"/}
+            <script>
+                    function dosubmit1(formobj) {
+                        var name = $(".bannerForm input[name='name']").val();
+                        var email = $(".bannerForm input[name='email']").val();
+                        if (name == "") {
+                            $(".bannerForm input[name='name']").css('border-color', 'red').focus();
+                            return false;
+                        } else if (!email.match(/[^\s\n]+\@[^\s\n]+\.(\w{2,4})$/)) {
+                            $(".bannerForm input[name='email']").css('border-color', 'red').focus();
+                            return false;
+                        } else if ($(".bannerForm form select").eq(0).val() == null) {
+                            $(".bannerForm form select").eq(0).css('border-color', 'red').focus();
+                            return false;
+                        } else if ($(".bannerForm form select").eq(1).val() == null) {
+                            $(".bannerForm form select").eq(1).css('border-color', 'red').focus();
+                            return false;
+                        } else if ($(".bannerForm form select").eq(2).val() == null) {
+                            $(".bannerForm form select").eq(2).css('border-color', 'red').focus();
+                            return false;
+                        }
+                        return true;
+                    }
+                    function dosubmit2(formobj){
+                        var email = $(".art3 input[name='email']").val();
+                        if (!email.match(/[^\s\n]+\@[^\s\n]+\.(\w{2,4})$/)) {
+                            alert("Напишите ваш E-mail!");
+                            return false;
+                        }else{
+                            $(".art3 input[name='name']").val(email.substring(0, email.indexOf('@')));
+                        }
+                        return true;
+                    }
+                </script>
+                <script type="text/javascript">
+                $(".banner1 input,.banner1 select").blur(function(event) {
+                	if($(this).val()!=''){
+                		$(this).css('border-color', '#ddd');
+                	}
+                });
+                </script>
+                <script>
+                    if($(window).width()>=1500){
+                        $(window).load(function(){
+                            var s_p=new Array();
+                            $win=$(window);
+                            var product_length=$(".rightFix ul li").length;
+                            for (i=0;i<product_length;i++){
+                                s_p[i]=$(".anchor").eq(i).offset().top;
+                            };
+                            function product_get_num(){
+                                for (i=0;i<product_length;i++){if($win.scrollTop()<s_p[i]-120) return i;};
+                            };
+                            $win.scroll(function () {
+                                var s_on=product_get_num();
+                                if(i>=1){
+                                    $(".rightFix ul li").eq(i-1).addClass("sp-on").siblings().removeClass("sp-on");
+                                }else{
+                                    $(".rightFix ul li").siblings().removeClass("sp-on");
+                                } 
+                            });
+                            $(".rightFix ul li").click(function(){
+                                $('html,body').stop(1).animate({scrollTop:s_p[$(this).index()]+"px"},300);
+                            })
+                        }) 
+                    }
+                </script>
+                <script type="text/javascript">
+                $(function(){
+                	$(".carousel li").show();
+                })
+                </script>
+                <script>
+                    $(function () {
+                        $(".banner").each(function() {
+        var e = $(this);
+        var pointer = e.attr("data-pointer");
+        var interval = e.attr("data-interval");
+        var style = e.attr("data-style");
+        var items = e.attr("data-item");
+        var items_s = e.attr("data-small");
+        var items_m = e.attr("data-middle");
+        var items_b = e.attr("data-big");
+        var num = e.find(".carousel .item").length;
+        var win = $(window).width();
+        var i = 1;
+        if (interval == null) {
+            interval = 5
+        }
+        if (items == null || items < 1) {
+            items = 1
+        }
+        if (items_s != null && win > 760) {
+            items = items_s
+        }
+        if (items_m != null && win > 1000) {
+            items = items_m
+        }
+        if (items_b != null && win > 1200) {
+            items = items_b
+        }
+        var itemWidth = Math.ceil(e.outerWidth() / items);
+        var page = Math.ceil(num / items);
+        e.find(".carousel .item").css("width", itemWidth + "px");
+        e.find(".carousel").css("width", itemWidth * num + "px");
+        var carousel = function() {
+            i++;
+            if (i > page) {
+                i = 1
+            }
+            $showbanner(e, i, items, num)
+        };
+        var play = setInterval(carousel, interval * 600);
+        e.mouseover(function() {
+            clearInterval(play)
+        });
+        e.mouseout(function() {
+            play = setInterval(carousel, interval * 600)
+        });
+        if (pointer != 0 && page > 1) {
+            var point = '<ul class="pointer"><li value="1" class="active"></li>';
+            for (var j = 1; j < page; j++) {
+                point = point + ' <li value="' + (j + 1) + '"></li>'
+            }
+            point = point + "</ul>";
+            var pager = $(point);
+            if (style != null) {
+                pager.addClass(style)
+            }
+            e.append(pager);
+            pager.css("left", e.outerWidth() * 0.5 - pager.outerWidth() * 0.5 + "px");
+            pager.find("li").click(function() {
+                $showbanner(e, $(this).val(), items, num)
+            });
+            var lefter = $('<div class="pager-prev icon-angle-left"></div>');
+            var righter = $('<div class="pager-next icon-angle-right"></div>');
+            if (style != null) {
+                lefter.addClass(style);
+                righter.addClass(style)
+            }
+            e.append(lefter);
+            e.append(righter);
+            lefter.click(function() {
+                i--;
+                if (i < 1) {
+                    i = page
+                }
+                $showbanner(e, i, items, num)
+            });
+            righter.click(function() {
+                i++;
+                if (i > page) {
+                    i = 1
+                }
+                $showbanner(e, i, items, num)
+            })
+        }
+    });
+    $showbanner = function(e, i, items, num) {
+        var after = 0,
+        leftx = 0;
+        leftx = -Math.ceil(e.outerWidth() / items) * (items) * (i - 1);
+        if (i * items > num) {
+            after = i * items - num;
+            leftx = -Math.ceil(e.outerWidth() / items) * (num - items)
+        }
+        e.find(".carousel").stop(true, true).animate({
+            "left": leftx + "px"
+        },
+        800);
+        e.find(".pointer li").removeClass("active");
+        e.find(".pointer li").eq(i - 1).addClass("active")
+    };
+                    });
+                </script>
+</html>

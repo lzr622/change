@@ -1,0 +1,10 @@
+li{
+    list-style: none;
+}
+.add{
+    font-size: 24px;
+    border: 1px solid black;
+    padding: 2px;
+    display: inline-block;
+    cursor: pointer;
+}

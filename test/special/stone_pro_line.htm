@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{dede:field.title /} - LIMING(Shanghai)</title>
+        <meta name="keywords" content="{dede:field.keywords /}" />
+        <meta name="description" content="{dede:field.description /}"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=10" />
+        <link rel="stylesheet" type="text/css" href="/css/glyphicons.css">
+        <link rel="stylesheet" href="/css/sr/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/sr/inside.css">
+    <link rel="stylesheet" type="text/css" href="/css/sr/media.css">
+    <link rel="stylesheet" href="/css/head.css">
+        <link rel="stylesheet" type="text/css" href="./stone_production_line/index.css">
+        <script src="/js/jquery-1.11.3.min.js"></script>
+    </head>
+    
+    <body>
+        <!--顶端导航-->
+        <div class="top" style="width:100%;background-color: #fff;z-index: 10000;background-color: #fff;position:relative;top:0">
+            <header class="container">
+                <a href="/">
+                    <img src="./stone_production_line/logo.png"></a>
+                <ul>
+                    <li>About Us</li>
+                    <li>Equipment</li>
+                    <li>Configuration</li>
+                    <li>Case</li>
+                    <li>FAQ</li>
+                    <li>Inquiry</li>
+                    </ul>
+                <a class="mail" href="mailto:infosh@limingco-group.com">Email:infosh@limingco-group.com</a></header>
+        </div>
+        <div class="rightFix">
+        	<div style="width:127px;height: 107px;cursor: pointer" onclick="openZoosUrl('chatwin');">
+        	</div>
+            <ul class="list-unstyle">
+                <li>About Us</li>
+                <li>Equipment</li>
+                <li>Configuration</li>
+                <li>Case</li>
+                <li>FAQ</li>
+                <li>Inquiry</li>
+            </ul>
+            <a href="#"><p>TOP</p></a>
+        </div>
+        <!--banner-->
+        <div class="clearfix"></div>
+        <div class="banner1">
+            <div class="bannerForm">
+                <p class="formHead">Request a Quote</p>
+                <form class="formBody" action="https://data.break-day.com/post_do.php" method="POST" onsubmit="return dosubmit1(this)">
+                	<input type="hidden" name="url" id="url" value="" />
+                	<script>document.getElementById("url").value = window.location.href;</script>
+                    <input type="text" name="name" class="input" placeholder="&nbsp;Name"/>
+                    <input type="text" name="email" class="input" placeholder="&nbsp;E-mail"/>
+                    <select name="product" class="input" id="product">
+                        <option value="" disabled selected style="display: none" class="formDis">Equipment</option>
+                        <option value="Mobile crusher">Mobile crusher</option>
+                        <option value="Stationary crusher">Stationary crusher</option>
+                        <option value="Grinding mill">Grinding mill</option>
+                        <option value="Mining machine">Mining machine</option>
+                    </select>
+                    <select class="input" name="message" id="capacity">
+                        <option value="" disabled selected style="display: none" class="formDis">Capacity</option>
+                        <option value="Capacity:500-800T/H">500-800T/H</option>
+                        <option value="Capacity:300-500T/H">300-500T/H</option>
+                        <option value="Capacity:200-300T/H">200-300T/H</option>
+                        <option value="Capacity:100-200T/H">100-200T/H</option>
+                        <option value="Capacity:50-100T/H">50-100T/H</option>
+                        <option value="Capacity:30-50T/H">30-50T/H</option>
+                        <option value="Capacity:&lt;30T/H">&lt;30T/H</option>
+                    </select>
+                    <select class="input" name="message" id="materials">
+                        <option value="" disabled selected style="display: none" class="formDis">Material</option>
+                        <option value="Materials:Granite; ">Granite</option>
+                        <option value="Materials:Limestone; ">Limestone</option>
+                        <option value="Materials:Basalt; ">Basalt</option>
+                        <option value="Materials:Pebble; ">Pebble</option>
+                        <option value="Materials:Gravel; ">Gravel</option>
+                        <option value="Materials:Gypsum; ">Gypsum</option>
+                        <option value="Materials:Marble; ">Marble</option>
+                        <option value="Materials:Barite; ">Barite</option>
+                        <option value="Materials:Quartz; ">Quartz</option>
+                        <option value="Materials:Dolomite; ">Dolomite</option>
+                        <option value="Materials:Gold Ore; ">Metal Ore</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <input type="submit" value="Send Now" class="formSubmit">
+                </form>
+                <script>
+                    $("#product,#capacity,#materials").css('color','#999');
+                    $("#product,#capacity,#materials").change(function(){
+                        $(this).css('color','#000');
+                    })
+                </script>
+            </div>
+            <div class="banner" data-pointer="1" data-interval="6" data-item="1" data-small="1" data-middle="1" data-big="1" data-style="border-red">
+                    <ul class="carousel">
+                        <li class="item"><img src="./stone_production_line/banner1.jpg" class="ban1"/>
+                            <img src="./stone_production_line/banner1_s.jpg" class="ban2">
+                        </li>
+                        <li class="item"><img src="./stone_production_line/banner2.jpg" class="ban1"/>
+                            <img src="./stone_production_line/banner2_s.jpg" class="ban2">
+                        </li>
+                        <li class="item"><img src="./stone_production_line/banner3.jpg" class="ban1"/>
+                            <img src="./stone_production_line/banner3_s.jpg" class="ban2">
+                        </li>
+                        <li class="item"><img src="./stone_production_line/banner4.jpg" class="ban1"/>
+                            <img src="./stone_production_line/banner4_s.jpg" class="ban2">
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        <!--导读-->
+            <article class="container art1">
+                <h1 class="anchor">
+                        WHY CHOOSING <span>LIMING HEAVY INDUSTRY</span>
+                </h1>
+                <section class="row-big sec1">
+                    <div class="col-md-3">
+                        <img src="./stone_production_line/company.jpg"  class="img-responsive" alt="">
+                        <h4>COMPANY STRENGTH</h4>
+                        <p>
+                            Based on modern production base covering 300, 000 squarmeters, Liming Heavy Industry makes the best use of intelligent tools to improve production capacity and process level.
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="./stone_production_line/advantage.jpg"  class="img-responsive" alt="">
+                        <h4>PRODUCT ADVANTAGE</h4>
+                        <p>
+                            According to more than 30 years’ experience and international concept, Liming Heavy Industry makes its products advanced, intelligent and efficient.
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="./stone_production_line/solution.jpg"  class="img-responsive" alt="">
+                        <h4>CUSTOMIZED SOLUTION</h4>
+                        <p>
+                            Technologist from Liming Heavy Industry will do on-the-spot investigation and provide tailored solution if there are specific requirements.
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="./stone_production_line/service.jpg"  class="img-responsive" alt="">
+                        <h4>ATTENTIVE SERVICE</h4>
+                        <p>
+                            Liming Heavy Industry will provide business reception, customized programme, equipment installation and regular visit. And one-to-one manager will participate in the whole project to provide suggestions.
+                        </p>
+                    </div>
+                </section>
+            </article>
+            <article class="art2">
+                <section class="container sec2">
+                    <h1 class="anchor">RELATED <span>EQUIPMENT</span></h1>
+                    <div class="row">
+                        
+                            <div class="col-md-5 equip aa clearfix">
+                                <div class="col-md-7 col-sm-6">
+                                    <a href="/crushing/pew.html"><p class="eTitle">European Type Jaw Crusher</p></a>
+                                    <p class="eIntro">Advanced process and reliable quality<br/>Good material and durable parts<br/>Stable running and safe operation<br/>Strong carrying capacity and long service life</p>
+                                </div>
+                                <div class="col-md-4 col-sm-6">
+                                    <a href="/crushing/pew.html"><img src="./stone_production_line/a1.png" class="img-responsive img-cen" alt=""></a>
+                                </div>
+                            </div>
+                        
+                        <div class="col-md-2"></div>
+                        
+                            <div class="col-md-5 equip bb clearfix">
+                                <div class="col-md-4 col-sm-6">
+                                    <a href="/crushing/pfw.html"><img src="./stone_production_line/b1.png" class="img-responsive img-cen" alt=""></a>
+                                </div>
+                                <div class="col-md-7 col-md-1-move col-sm-6 ">
+                                    <a href="/crushing/pfw.html"><p class="eTitle">European Type Impact Crusher</p></a>
+                                    <p class="eIntro">Heavy duty rotor<br/>Unique hammer fixing device<br/>Semi automatic adjusting device<br/>Open top device</p>
+                                </div>
+                            </div>
+                        
+                        <div class="clearfix"></div>
+                        <div class="hidden-m hidden-b" style="margin-bottom: 40px;">
+                            <img src="./stone_production_line/circle1.png" class="img-responsive img-cen" alt="">
+                        </div>
+                        
+                            <div class="col-md-5 equip cc clearfix">
+                                <div class="col-md-7 col-sm-6">
+                                    <a href="/crushing/hpt.html"><p class="eTitle">HPT Hydraulic Cone Crusher</p></a>
+                                    <p class="eIntro">The efficiency is improved by 5%-15%<br/>The capacity is improved by 35%-60%<br/>Lamination crushing principle<br/>Hydraulic lubrication control system</p>
+                                </div>
+                                <div class="col-md-4 col-sm-6">
+                                    <a href="/crushing/hpt.html"><img src="./stone_production_line/c1.png" class="img-responsive img-cen" alt=""></a>
+                                </div>
+                            </div>
+                        
+                        <div class="col-md-2"></div>
+                        
+                            <div class="col-md-5 equip dd clearfix">
+                                <div class="col-md-5 col-sm-6">
+                                    <a href="/sand/vsi6x.html"><img src="./stone_production_line/d1.png" class="imgSpecB imgSpecS img-cen" alt=""></a>
+                                </div>
+                                <div class="col-md-7 col-sm-6">
+                                    <a href="/sand/vsi6x.html"><p class="eTitle">VSI6X Sand Making Machine</p></a>
+                                    <p class="eIntro">Four opening impeller structure<br/>Special sealing structure<br/>Crushing between materials<br/>New lifting device</p>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </section>
+            </article>
+            <article class="container art3">
+                <h1 class="anchor">CAPACITY <span>CONFIGU<span class="hidden-s hidden-m hidden-b">-<br/></span>RATION</span></h1>
+                <section class="row-big sec3">
+                    <div class="col-sm-12">
+                        <div class="clearfix">
+                            <div class="col-md-3 box1">
+                                <img src="./stone_production_line/200th.jpg" class="img-responsive img-cen is" alt="">
+                                <img src="./stone_production_line/200th_b.jpg" class="img-responsive img-cen ib" alt="">
+                            </div>
+                            <div class="col-md-2 box2">
+                                <p>200T/H</p>
+                                <p>Capacity</p>
+                            </div>
+                            <div class="col-md-3 box3">
+                                <p>Jaw Crusher</p>
+                                <p>European Type Impact Crusher</p>
+                                <p>Vibrating Screen</p>
+                            </div>
+                            <div class="col-md-4 box4">
+                                <form action="https://data.break-day.com/post_do.php" method="POST" onsubmit="return dosubmit2(this)">
+                                    <input type="text" class="input capaInput" placeholder="Please input your e-mail" name="email"><input type="submit" class="capaSubmit" value="Get a quote">
+                                    <input type="hidden" name="product" value="Jaw Crusher">
+                                    <input type="hidden" name="message" id="capacity" value="Capacity:200T/H">
+                                    <input type="hidden" name="message" id="materials" value="Materials:Stone Crusher">
+                                    <input type="hidden" name="name" value="">
+                                    <input type="hidden" name="url" id="url" value="" />
+                					<script>document.getElementById("url").value = window.location.href;</script>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="clearfix">
+                            <div class="col-md-3 box1">
+                                <img src="./stone_production_line/300th.jpg" class="img-responsive img-cen is" alt="">
+                                <img src="./stone_production_line/300th_b.jpg" class="img-responsive img-cen ib" alt="">
+                            </div>
+                            <div class="col-md-2 box2">
+                                <p>300T/H</p>
+                                <p>Capacity</p>
+                            </div>
+                            <div class="col-md-3 box3">
+                                <p>Jaw Crusher</p>
+                                <p>HST Hydraulic Cone Crusher</p>
+                                <p>VSI5X Sand Making Machine</p>
+                            </div>
+                            <div class="col-md-4 box4">
+                                <form action="https://data.break-day.com/post_do.php" method="POST" onsubmit="return dosubmit2(this)">
+                                    <input type="text" class="input capaInput" placeholder="Please input your e-mail" name="email"><input type="submit" class="capaSubmit" value="Get a quote">
+                                    <input type="hidden" name="product" value="Jaw Crusher">
+                                    <input type="hidden" name="message" id="capacity" value="Capacity:300T/H">
+                                    <input type="hidden" name="message" id="materials" value="Materials:Stone Crusher">
+                                    <input type="hidden" name="name" value="">
+                                    <input type="hidden" name="url" id="url" value="" />
+                					<script>document.getElementById("url").value = window.location.href;</script>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="clearfix">
+                            <div class="col-md-3 box1">
+                                <img src="./stone_production_line/500th.jpg" class="img-responsive img-cen is" alt="">
+                                <img src="./stone_production_line/500th_b.jpg" class="img-responsive img-cen ib" alt="">
+                            </div>
+                            <div class="col-md-2 box2">
+                                <p>500T/H</p>
+                                <p>Capacity</p>
+                            </div>
+                            <div class="col-md-3 box3">
+                                <p>European Type Jaw Crusher</p>
+                                <p>European Type Impact Crusher</p>
+                                <p>Vibrating Screen</p>
+                            </div>
+                            <div class="col-md-4 box4">
+                                <form action="https://data.break-day.com/post_do.php" method="POST" onsubmit="return dosubmit2(this)">
+                                    <input type="text" class="input capaInput" placeholder="Please input your e-mail" name="email"><input type="submit" class="capaSubmit" value="Get a quote">
+                                    <input type="hidden" name="product" value="European Type Jaw Crusher">
+                                    <input type="hidden" name="message" id="capacity" value="Capacity:500T/H">
+                                    <input type="hidden" name="message" id="materials" value="Materials:Stone Crusher">
+                                    <input type="hidden" name="name" value="">
+                                    <input type="hidden" name="url" id="url" value="" />
+                					<script>document.getElementById("url").value = window.location.href;</script>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="clearfix">
+                            <div class="col-md-3 box1">
+                                <img src="./stone_production_line/700th.jpg" class="img-responsive img-cen is" alt="">
+                                <img src="./stone_production_line/700th_b.jpg" class="img-responsive img-cen ib" alt="">
+                            </div>
+                            <div class="col-md-2 box2">
+                                <p>700-800T/H</p>
+                                <p>Capacity</p>
+                            </div>
+                            <div class="col-md-3 box3">
+                                <p>Jaw Crusher</p>
+                                <p>HST Hydraulic Cone Crusher</p>
+                                <p>VSI5X Sand Making Machine</p>
+                            </div>
+                            <div class="col-md-4 box4">
+                                <form action="https://data.break-day.com/post_do.php" method="POST" onsubmit="return dosubmit2(this)">
+                                    <input type="text" class="input capaInput" placeholder="Please input your e-mail" name="email"><input type="submit" class="capaSubmit" value="Get a quote">
+                                    <input type="hidden" name="product" value="Jaw Crusher">
+                                    <input type="hidden" name="message" id="capacity" value="Capacity:700-800T/H">
+                                    <input type="hidden" name="message" id="materials" value="Materials:Stone Crusher">
+                                    <input type="hidden" name="name" value="">
+                                    <input type="hidden" name="url" id="url" value="" />
+                					<script>document.getElementById("url").value = window.location.href;</script>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article class="art4">
+                <section class="container sec4">
+                    <h1 class="anchor">CLASSIC <span>CASE</span></h1>
+                    <div class="row-big">
+                        <a href="/project/crushing/chile.html">
+                            <div class="col-md-6 case1St">
+                                <div class="case">
+                                    <img src="./stone_production_line/case1.jpg" class="img-responsive img-max" alt="">
+                                    <div class="caseIntro">
+                                        <p><b>Location:</b> Copiapo in Chile</p>
+                                        <p><b>Equipment:</b> Four sets of sand making machine VSI5X1145, jaw crusher PE900X1200, cone crusher CSB240 and vibrating screen 3YZS2160.</p>
+                                        <p><b>Material:</b> Iron ore</p>
+                                        <p><b>Capacity:</b> 300-400 T/H</p>
+                                        <p><b>Input size:</b> 0-750mm</p>
+                                        <p><b>Output size:</b> 0-6mm</p>
+                                    </div>
+                                </div>
+                                <p class="caseTitle">300-400tph stone crushing line in Chile</p>
+                            </div>
+                        </a>
+                        <a href="/project/crushing/tajikistan.html">
+                            <div class="col-md-6">
+                                <div class="case">
+                                    <img src="./stone_production_line/case2.jpg" class="img-responsive img-max" alt="">
+                                    <div class="caseIntro">
+                                        <p><b>Location:</b> Tajikistan</p>
+                                        <p><b>Equipment:</b> Jaw Crusher PE900×1200, European Type Impact Crusher PFW1318II and PFW1415III.</p>
+                                        <p><b>Material:</b> Sandstone</p>
+                                        <p><b>Capacity:</b> 350-400 T/H</p>
+                                        <p><b>Input size:</b> 800mm</p>
+                                        <p><b>Output size:</b> 0-5mm, 5-10mm,10-20mm,20-40mm</p>
+                                    </div>
+                                </div>
+                                <p class="caseTitle">350-400TPH Sandstone Crushing Line in Tajikistan</p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </article>
+            <article class="container art5">
+                <h1 class="anchor">ONLINE <span>FAQ</span></h1>
+                <section class="row-big sec5">
+                    <ul class="list-unstyle col-sm-12">
+                        <li>
+                            <p class="onlineQ"><span>Q:</span>Richard: What materials can stone crushing line processes? How about hard stones?</p>
+                            <p class="onlineA"><span>A:</span>This production line can process all kinds of materials whether soft stones or hard stones, such as river stone, granite, basalt, limestone, iron ore, etc.</p>
+                        </li>
+                        <li>
+                            <p class="onlineQ"><span>Q:</span>Peter: How much should I spend if investing a 300tph stone crushing line?</p>
+                            <p class="onlineA"><span>A:</span>Besides capacity, the configuration should be repeatedly determined according to material type, input size, output size and etc. factors. If you can leave enough messages or contact information, our expert will call back and give the suitable price. Just purchase the product at ease because it will give you surprise in a cost-effective way.</p>
+                        </li>
+                        <li>
+                            <p class="onlineQ"><span>Q:</span>Sam: Is there a production site in Russia?</p>
+                            <p class="onlineA"><span>A:</span>Yes, there is. There are many production sites in the worldwide actually. Besides, the branch of Liming Heavy Industry is also in Russia. You can visit it or call the hotline if there is any question.</p>
+                        </li>
+                        <li>
+                            <p class="onlineQ"><span>Q:</span>Taylor: Do you have other products besides those mentioned above?</p>
+                            <p class="onlineA"><span>A:</span>Liming Heavy Industry has many kinds of products including crushing equipment, sand making machine, grinding equipment and mobile crusher. We will provide tailored solutions and suitable product for you.</p>
+                        </li>
+                        <li>
+                            <p class="onlineQ"><span>Q:</span>Vincent: Do you provide after-sale service?</p>
+                            <p class="onlineA"><span>A:</span>Not only dose Liming Heavy Industry provide solution and equipment, but also it offers installation, debugging, technical consultation and operation training. All these will make your project running convenient.</p>
+                        </li>
+                        <li>
+                            <p class="onlineQ"><span>Q:</span>Andrew: Can you give the detailed address? I want to visit the company for more information.</p>
+                            <p class="onlineA"><span>A:</span>Welcome to your visit. The company address is Office 802A, #16 Building, No. 1000 Jinhai Road, Golden Bridge County, Pudong New District, Shanghai, China. You can leave message previously and we will provide best business reception. </p>
+                        </li>
+                    </ul>
+
+                </section>
+            </article>
+
+        
+        
+        
+        <div class="clearfix"></div>
+        <div id="sh_message" class="anchor"></div>
+        {dede:include filename="how_report.htm"/}
+        {dede:include filename="foot_report.htm"/}
+            <script>
+                    function dosubmit1(formobj) {
+                        var name = $(".bannerForm input[name='name']").val();
+                        var email = $(".bannerForm input[name='email']").val();
+                        if (name == "") {
+                            $(".bannerForm input[name='name']").css('border-color', 'red').focus();
+                            return false;
+                        } else if (!email.match(/[^\s\n]+\@[^\s\n]+\.(\w{2,4})$/)) {
+                            $(".bannerForm input[name='email']").css('border-color', 'red').focus();
+                            return false;
+                        } else if ($(".bannerForm form select").eq(0).val() == null) {
+                            $(".bannerForm form select").eq(0).css('border-color', 'red').focus();
+                            return false;
+                        } else if ($(".bannerForm form select").eq(1).val() == null) {
+                            $(".bannerForm form select").eq(1).css('border-color', 'red').focus();
+                            return false;
+                        } else if ($(".bannerForm form select").eq(2).val() == null) {
+                            $(".bannerForm form select").eq(2).css('border-color', 'red').focus();
+                            return false;
+                        }
+                        return true;
+                    }
+                    function dosubmit2(formobj){
+                        var email = $(".art3 input[name='email']").val();
+                        if (!email.match(/[^\s\n]+\@[^\s\n]+\.(\w{2,4})$/)) {
+                            alert("Please input your email!");
+                            return false;
+                        }else{
+                            $(".art3 input[name='name']").val(email.substring(0, email.indexOf('@')));
+                        }
+                        return true;
+                    }
+                </script>
+                <script type="text/javascript">
+                $(".banner1 input,.banner1 select").blur(function(event) {
+                	if($(this).val()!=''){
+                		$(this).css('border-color', '#ddd');
+                	}
+                });
+                </script>
+                <script>
+                    if($(window).width()>=1500){
+                        $(window).load(function(){
+                            var s_p=new Array();
+                            $win=$(window);
+                            var product_length=$(".rightFix ul li").length;
+                            for (i=0;i<product_length;i++){
+                                s_p[i]=$(".anchor").eq(i).offset().top;
+                            };
+                            function product_get_num(){
+                                for (i=0;i<product_length;i++){if($win.scrollTop()<s_p[i]-120) return i;};
+                            };
+                            $win.scroll(function () {
+                                var s_on=product_get_num();
+                                if(i>=1){
+                                    $(".rightFix ul li").eq(i-1).addClass("sp-on").siblings().removeClass("sp-on");
+                                }else{
+                                    $(".rightFix ul li").siblings().removeClass("sp-on");
+                                } 
+                            });
+                            $(".rightFix ul li").click(function(){
+                                $('html,body').stop(1).animate({scrollTop:s_p[$(this).index()]+"px"},300);
+                            })
+                        }) 
+                    }
+                </script>
+                <script type="text/javascript">
+                $(function(){
+                	$(".carousel li").show();
+                })
+                </script>
+                
+                <script type="text/javascript">
+                // if($(window).width()>=1000){
+                //     $(".box1 img:first-child").mouseover(function(){
+                //         console.log($(this).parent().index());
+                //         $(".imgbig").eq($(this).parent().index()).fadeIn(200);
+                //     })
+                //     $(".imgbig img").mouseout(function(){
+                //         $(".imgbig").fadeOut(200);
+                //     })
+                // }
+                // if($(window).width()>=1200){
+                //     $(".is").mouseover(function(){
+                //         console.log($(this).parent().index());
+                //         $(".imgbig").eq($(this).parent().index()).fadeIn(200);
+                //     })
+                //     $(".is").mouseout(function(){
+                //         $(".imgbig").fadeOut(200);
+                //     })
+                // }
+                </script>
+                <script>
+                    $(function () {
+                        $(".banner").each(function() {
+        var e = $(this);
+        var pointer = e.attr("data-pointer");
+        var interval = e.attr("data-interval");
+        var style = e.attr("data-style");
+        var items = e.attr("data-item");
+        var items_s = e.attr("data-small");
+        var items_m = e.attr("data-middle");
+        var items_b = e.attr("data-big");
+        var num = e.find(".carousel .item").length;
+        var win = $(window).width();
+        var i = 1;
+        if (interval == null) {
+            interval = 5
+        }
+        if (items == null || items < 1) {
+            items = 1
+        }
+        if (items_s != null && win > 760) {
+            items = items_s
+        }
+        if (items_m != null && win > 1000) {
+            items = items_m
+        }
+        if (items_b != null && win > 1200) {
+            items = items_b
+        }
+        var itemWidth = Math.ceil(e.outerWidth() / items);
+        var page = Math.ceil(num / items);
+        e.find(".carousel .item").css("width", itemWidth + "px");
+        e.find(".carousel").css("width", itemWidth * num + "px");
+        var carousel = function() {
+            i++;
+            if (i > page) {
+                i = 1
+            }
+            $showbanner(e, i, items, num)
+        };
+        var play = setInterval(carousel, interval * 600);
+        e.mouseover(function() {
+            clearInterval(play)
+        });
+        e.mouseout(function() {
+            play = setInterval(carousel, interval * 600)
+        });
+        if (pointer != 0 && page > 1) {
+            var point = '<ul class="pointer"><li value="1" class="active"></li>';
+            for (var j = 1; j < page; j++) {
+                point = point + ' <li value="' + (j + 1) + '"></li>'
+            }
+            point = point + "</ul>";
+            var pager = $(point);
+            if (style != null) {
+                pager.addClass(style)
+            }
+            e.append(pager);
+            pager.css("left", e.outerWidth() * 0.5 - pager.outerWidth() * 0.5 + "px");
+            pager.find("li").click(function() {
+                $showbanner(e, $(this).val(), items, num)
+            });
+            var lefter = $('<div class="pager-prev icon-angle-left"></div>');
+            var righter = $('<div class="pager-next icon-angle-right"></div>');
+            if (style != null) {
+                lefter.addClass(style);
+                righter.addClass(style)
+            }
+            e.append(lefter);
+            e.append(righter);
+            lefter.click(function() {
+                i--;
+                if (i < 1) {
+                    i = page
+                }
+                $showbanner(e, i, items, num)
+            });
+            righter.click(function() {
+                i++;
+                if (i > page) {
+                    i = 1
+                }
+                $showbanner(e, i, items, num)
+            })
+        }
+    });
+    $showbanner = function(e, i, items, num) {
+        var after = 0,
+        leftx = 0;
+        leftx = -Math.ceil(e.outerWidth() / items) * (items) * (i - 1);
+        if (i * items > num) {
+            after = i * items - num;
+            leftx = -Math.ceil(e.outerWidth() / items) * (num - items)
+        }
+        e.find(".carousel").stop(true, true).animate({
+            "left": leftx + "px"
+        },
+        800);
+        e.find(".pointer li").removeClass("active");
+        e.find(".pointer li").eq(i - 1).addClass("active")
+    };
+                    });
+                </script>
+</html>
